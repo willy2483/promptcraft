@@ -26,8 +26,17 @@ export default function Home() {
   const [selectedTemplate, setSelectedTemplate] = useState('');
 
   const professionalTemplates = [
-    { id: 'forensic_analysis', name: 'Analyse forensic', description: 'Investigation numérique et analyse de preuves' },
-    { id: 'technical_investigation', name: 'Investigation technique', description: 'Résolution d\'incidents et diagnostics' },
+    // Templates Forensic spécialisés
+    { id: 'browser_analysis', name: 'Analyse de navigation web', description: 'Historique, cookies, téléchargements, onglets' },
+    { id: 'internet_search_analysis', name: 'Analyse des recherches internet', description: 'Requêtes de recherche et comportements en ligne' },
+    { id: 'event_logs_analysis', name: 'Analyse des journaux d\'événements', description: 'Logs système, sécurité et applications' },
+    { id: 'email_analysis', name: 'Analyse d\'emails', description: 'Headers, pièces jointes, métadonnées' },
+    { id: 'file_system_analysis', name: 'Analyse du système de fichiers', description: 'Arborescence, fichiers supprimés, timestamps' },
+    { id: 'network_analysis', name: 'Analyse réseau', description: 'Trafic, connexions, protocoles' },
+    { id: 'mobile_analysis', name: 'Analyse mobile', description: 'SMS, appels, apps, géolocalisation' },
+    { id: 'malware_analysis', name: 'Analyse de malware', description: 'Comportement, IOCs, signatures' },
+    
+    // Templates génériques
     { id: 'learning_tech', name: 'Apprentissage technique', description: 'Formation sur nouvelles technologies' },
     { id: 'financial_analysis', name: 'Analyse financière', description: 'Compréhension concepts financiers' },
     { id: 'health_science', name: 'Sciences de la santé', description: 'Apprentissage médical et recherche santé' },
